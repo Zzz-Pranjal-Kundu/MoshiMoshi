@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Shadows+Into+Light&display=swap');
+
+/* Full-page GIF background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Shadows Into Light', cursive;
+  background-image: url('../tumblr_occujlvMQE1qze3hdo1_500.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Container styles */
+.container {
+  background-color: bisque;
+  color: rgb(189, 90, 23);
+  width: 35vw;
+  height: 12vh;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  padding-bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-shrink: 1;
+  flex-wrap: wrap;
+  border-radius: 45px;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments for container */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 50vw; /* Adjust width for medium screens */
+    height: auto; /* Allow height to adapt based on content */
+    min-width: 200px; /* Increase minimum width slightly */
+    padding: 15px 10px; /* Add more padding for readability */
+    margin-top: 15px; /* Reduce top margin slightly */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 80vw; /* Increase width for very small screens */
+    padding: 12px 8px; /* Adjust padding for smaller screens */
+    min-width: 150px; /* Keep minimum width for mobile */
+    margin-top: 10px; /* Further reduce margin */
+  }
+}
+
+/* App name styles */
+#Name_Of_the_App {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  font-family: 'Shadows Into Light';
+  font-size: 60px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+/* Responsive text size adjustments */
+@media only screen and (max-width: 768px) {
+  #Name_Of_the_App {
+    font-size: 45px; /* Reduce font size for medium screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #Name_Of_the_App {
+    font-size: 30px; /* Further reduce font size for smaller screens */
+    margin-bottom: 8px; /* Adjust margin for consistency */
+  }
+}

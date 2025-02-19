@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* height: 100svh; */
+    width: 100vw;
+    background-image: url('https://64.media.tumblr.com/752e98a41362e1c7e51c7a50a78c179c/f56cd24a7cd794d6-54/s2048x3072_c0,0,100000,85880/782343118d50eddb426ac93204cac586f38469cd.gif'); /* Add .gif if you are hosting the GIF directly */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.welcome-heading {
+    font-family: 'Shadows Into Light';
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(152, 218, 77);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-button {
+    margin-top: 1rem;
+}
+
+.welcome-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 2px #3e8e41; /* Reduce shadow for 3D press effect */
+    transform: translateY(2px); /* Move button down slightly */
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+      width: 60vw; /* Adjust width for medium screens */
+      height: auto; /* Allow height to adapt based on content */
+      min-width: 200px; /* Increase minimum width slightly */
+      padding: 15px 10px; /* Add more padding for readability */
+      margin-top: 15px; /* Reduce top margin slightly */
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container {
+      width: 60vw; /* Increase width for very small screens */
+      padding: 12px 8px; /* Adjust padding for smaller screens */
+      min-width: 150px; /* Keep minimum width for mobile */
+      margin-top: 10px; /* Further reduce margin */
+    }
+  }
+ 

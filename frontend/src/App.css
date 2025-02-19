@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+/* .App{
+    min-height: 100vh;
+    display: flex;
+    background-image: url('https://64.media.tumblr.com/752e98a41362e1c7e51c7a50a78c179c/f56cd24a7cd794d6-54/s2048x3072_c0,0,100000,85880/782343118d50eddb426ac93204cac586f38469cd.gif');
+    background-size: cover;
+    background-position: center;
+} */
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(136,136,136,0.281);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-image: url('https://64.media.tumblr.com/752e98a41362e1c7e51c7a50a78c179c/f56cd24a7cd794d6-54/s2048x3072_c0,0,100000,85880/782343118d50eddb426ac93204cac586f38469cd.gif');
+    background-size: cover; /* Ensure the image covers the full screen */
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden; /* Prevent scrollbars due to oversizing */
+}
+
+.welcome-heading {
+    font-family: 'Shadows Into Light';
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(152, 218, 77);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-button {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.welcome-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 2px #3e8e41; /* Reduce shadow for 3D press effect */
+    transform: translateY(2px); /* Move button down slightly */
+}
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 768px) {
+    .welcome-heading {
+        font-size: 2.5rem; /* Smaller font size for medium screens */
+        padding: 1rem;
+    }
+    .welcome-button {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem; /* Adjust padding for medium screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .welcome-heading {
+        font-size: 2rem; /* Even smaller font size for mobile screens */
+        padding: 0.8rem;
+    }
+    .welcome-button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem; /* Adjust padding for mobile screens */
+    }
+
+    .welcome-container {
+        height: 100svh; /* Modern units to better fit mobile browsers */
+        width: 100vw;
+        background-size: contain; /* Adjust image scaling for smaller screens */
+        background-position: center center; /* Keep the image centered */
+    }
+}
